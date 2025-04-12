@@ -9,7 +9,7 @@ body{
 header{
     width: 1fr;
     height: 600px;
-    background-image: url(./img/Banner2.jpg);
+    background-image: url(../img/Banner2.jpg);
     background-position: left;
     background-size: cover;
     margin: auto;
