@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Sigmar&display=swap'); 
+
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+header{
+    width: 1fr;
+    height: 600px;
+    background-image: url(/img/Banner2.jpg);
+    background-position: left;
+    background-size: cover;
+    margin: auto;
+}
+
+.logo {
+    width: 80px;
+    margin: auto;
+    display: block;
+}
+
+nav {
+    width: 1200px;
+    height: 60px;
+    background-color: #806A53;
+    margin: auto;
+    color: antiquewhite;
+    font-size: 24px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    width: 201px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;   
+     
+}
+
+nav li ul {
+    position: absolute;
+    display: none;
+    background-color: #806A53;
+   
+}
+
+nav li {
+    padding: 15px;
+    margin: 0px;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: inline;
+}
+
+
+nav li:hover {
+    background-color: #bdb198;
+    padding: 15px;
+    margin: 0px;
+}
+
+nav a:hover {
+    color: #806A53;
+}
+
+
+nav li:hover >ul {
+    display: block;
+    margin: 0px;
+}
+
+.enlace {
+    float: left;
+}
+
+
+section{
+    width: 1fr;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+p{
+    text-align: justify;
+}
+
+#textofooter{
+    color: aliceblue;
+    padding: 35px;
+    text-align: center;
+}
+
+
+footer{
+    width: 1fr;
+    text-align: center;
+    background-color:#BDB198;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+h1 {
+    color: #7d3636;
+    width: 1fr;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius:10px ;
+    font-size: 45px;
+    font-family: "Sigmar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.table {
+    display: table;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    border: 1px solid;
+    border-color: #ffffff;
+}
+
+
+
+.index_calzado {
+    width: 476px;
+}
+
+h2 {
+    text-align: center;
+    margin: 15px;
+    
+}
+
+.precio {
+    color: #c53c3c;
+    font-size: 30px;
+    font-family: "Sigmar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    text-align: right;
+}
+
+.img_prueba:hover {
+    background-image: url(/img/vez1.jpg);
+}
+
+.atitulos {
+    animation-name: atitulo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes atitulo {
+    0%{font-size: 45px;color: #7d3636;}
+    50%{font-size: 48px;color: #a56161;}
+    100%{font-size: 45px;color: #7d3636;}
+}
+
+.galeria {
+    margin-bottom: 2rem;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+        
+}
+
+.galeria-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+@media (min-width:769px) and (max-width:1024px) {
+
+    .grid-galeria {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:10px;
+    }
+    
+}
+
+/* ESTILOS PARA CELULARES */
+
+@media (max-width:768px)  {
+    
+
+   
+    nav {
+        width: 100%;
+        height: 100px;
+        border-radius: 0px;
+        padding: 30px;
+        margin: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+
+    nav li {
+        margin: 5px;
+        border-bottom: 0px solid rgb(244, 238, 230);
+    }
+
+    nav a {
+        text-align: left;
+    }
+
+
+
+    .grid-galeria {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 0px;
+    }
+    
+    #textofooter{
+        color: aliceblue;
+        padding: 35px;
+        text-align: center;
+    }
+
+
+    footer{
+        width: 1fr;
+        text-align: center;
+        background-color:#BDB198;
+        margin: auto;
+        border-radius: 20px;
+        margin-top: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+
+    h1 {
+        color: #7d3636;
+        width: 1f;
+        margin: auto;
+        text-align: center;
+        padding: 10px;
+        border-radius:10px ;
+        font-size: 45px;
+        font-family: "Sigmar", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+
+}
